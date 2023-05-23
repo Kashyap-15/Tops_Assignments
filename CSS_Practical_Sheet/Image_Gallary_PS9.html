@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .maindiv{
+            height: auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 30px;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+        .maindiv img{
+            height: 200px;
+            width: 200px;
+            border: 2px solid green ;
+            border-radius: 7px;
+            box-shadow: 2px 2px 3px 3px;
+        }
+        .maindiv .img1{
+            transform: scale(0.9);
+        }
+        .maindiv .img2{
+            transform: scaleY(0.9);
+        }
+        .maindiv .img3{
+            transform: scaleY(0.9);
+        }
+        .maindiv .img4{
+            transform: scaleX(0.8);
+        }
+        .maindiv .img5{
+            transform: rotate(328deg);
+        }
+        .maindiv .img6{
+            transform: scale(1.1);
+        }
+        .maindiv .img7{
+            transform: scale(0.8);
+        }
+        .maindiv .img8{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="img1">
+            <img src="image/Dogs.jpg" alt="">
+        </div>
+        <div class="img2">
+            <img src="image/Deer.jpg" alt="">
+        </div>
+        <div class="img3">
+            <img src="image/hen.jpg" alt="">
+        </div>
+        <div class="img4">
+            <img src="image/squirrel.jpg" alt="">
+        </div>
+        <div class="img5">
+            <img src="image/Horse.jpg" alt="">
+        </div>
+        <div class="img6">
+            <img src="image/Bird.jpg" alt="">
+        </div>
+        <div class="img7">
+            <img src="image/Lion.jpg" alt="">
+        </div>
+        <div class="img8">
+            <img src="image/strawberry.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
