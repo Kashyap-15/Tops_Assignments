@@ -1,0 +1,45 @@
+/* ========================== SECTION ============================== */
+.footer{
+    background-color: #010122ed;
+}
+.footer .div_m{
+    margin: 0px 80px;
+}
+.footer .div_p{
+    padding: 20px;
+}
+/* ========================== MAIN ============================== */
+.footer .main_div{
+    color: white;
+    display: flex;
+    gap: 150px;
+    padding: 40px 0px;
+}
+.footer .main_div .div_logo img{
+    padding-bottom: 10px;
+}
+.footer .main_div .div_logo span{
+    padding:30px;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 20px;
+}
+/* ========================== LIST ============================== */
+.footer .main_div .div_project li{
+    padding: 5px 5px;
+}
+.footer .main_div .div_company li{
+    padding: 5px 5px;
+}
+.footer .main_div .div_company .pad{
+    width: 120px;
+}
+.footer .main_div .div_movment li{
+    padding: 5px 5px;
+}
+.footer .main_div .div_movment .pad{
+    width: 120px;
+}
+.footer .main_div .div_help li{
+    padding: 5px 5px;
+}

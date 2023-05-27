@@ -1,0 +1,23 @@
+/* ========================== SECTION ============================== */
+.featured{
+    background-color: #010122;
+}
+.featured .div_m{
+    margin: 0px 80px;
+}
+.featured .div_p{
+    padding: 20px;
+}
+/* ========================== HEADING ============================== */
+.featured .maindiv_featured h1{
+    color: white;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* ========================== FLEX ============================== */
+.featured .div_flex{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}

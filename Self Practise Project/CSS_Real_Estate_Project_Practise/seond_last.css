@@ -1,0 +1,44 @@
+/* ========================== SECTION ============================== */
+.flex_sec{
+    background-color: #010122;
+}
+.flex_sec .div_m{
+    margin: 0px 80px;
+}
+.flex_sec .div_p{
+    padding: 20px;
+}
+/* ========================== QUOTE ============================== */
+.flex_sec .main_div{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+.flex_sec .main_div .div_head{
+    height: 300px;
+    width: 600px;
+    padding-top: 40px;
+    font-size: 50px;
+    font-weight: 800;
+}
+.flex_sec .main_div .div_para{
+    height: 300px;
+    width: 100%;
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.flex_sec .main_div .div_para p{
+    padding-bottom: 50px;
+    width: 100%;
+}
+.flex_sec .main_div .div_para button{
+    height: 50px;
+    width: 160px;
+    background-color: #1AA090;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+    border: 2px solid transparent;
+}

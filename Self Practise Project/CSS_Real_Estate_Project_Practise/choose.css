@@ -1,0 +1,83 @@
+/* ========================== SECTION ============================== */
+.choose{
+    background-color: #010122;
+}
+.choose .div_m{
+    margin: 0px 80px;
+}
+.choose .div_p{
+    padding: 20px;
+}
+/* ========================== MAIN & BUTTON ============================== */
+.choose .main_div{
+    color: white;
+}
+.choose .main_div .btn{
+    margin: 50px 520px;
+}
+.choose .main_div .btn button{
+    height: 80px;
+    width: 290px;
+    background-color: #1AA090;
+   font-size: 20px;
+   color: white;
+}
+/* ========================== CHOOSE GRID ============================== */
+.choose .main_div .head_div{
+    font-size: 30px;
+    margin: 150px;
+    padding-left: 325px;
+}
+.choose .main_div .grid_div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    gap: 30px;
+}
+.choose .main_div .grid_div img{
+    padding-left: 110px;
+    height: auto;
+    max-width: 100%;
+}
+/* ========================== IMG1 ============================== */
+.choose .main_div .grid_div .img1 h3{
+    padding-top:40px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.choose .main_div .grid_div .img1 p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    padding-bottom: 40px;
+}
+/* ========================== IMG2 ============================== */
+.choose .main_div .grid_div .img2 h3{
+    padding-top:40px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.choose .main_div .grid_div .img2 p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    padding-bottom: 40px;
+}
+/* ========================== IMG3 ============================== */
+.choose .main_div .grid_div .img3 h3{
+    padding-top:40px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+.choose .main_div .grid_div .img3 p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    padding-bottom: 40px;
+}

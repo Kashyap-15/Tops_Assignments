@@ -1,0 +1,87 @@
+/* ========================== SECTION ============================== */
+.sec{
+    background-color: #010122;
+}
+.sec .div_m{
+    margin: 0px 80px;
+    margin-top: 80px;
+}
+.sec .div_p{
+    padding: 20px;
+}
+.sec .mainsec_div .absolute_class{
+    color: white;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 0;
+}
+/* ========================== HEADING ============================== */
+.sec .mainsec_div .absolute_class .head_para{
+    height: 400px;
+    width: 600px;
+}
+.sec .mainsec_div .absolute_class .head_para h1{
+    font-size: 70px;
+    padding-top: 43px;
+    padding-bottom: 20px;
+}
+.sec .mainsec_div .absolute_class .head_para p{
+    font-size: 20px;
+}
+/* ========================== IMAGE ============================== */
+
+.sec .mainsec_div .absolute_class .img-div img{
+   height: auto;
+   max-width: 100%;
+}
+/* ========================== ABSOLUTE-DIV ============================== */
+
+.sec .mainsec_div .absolute-div{
+   position: absolute;
+   top: 600px;
+   width: 750px;
+   display: flex;
+   font-size: 20px;
+   font-weight: 400;
+   justify-content: center;
+}
+.sec .mainsec_div .absolute-div a{
+    color: black;
+}
+.sec .mainsec_div .absolute-div .purpose{
+    height: 80px;
+    width: 200px;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+    padding-top: 25px;
+    border: 1px solid gray;
+}
+.sec .mainsec_div .absolute-div .location{
+    height: 80px;
+    width: 200px;
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 25px;
+    border: 1px solid gray;
+}
+.sec .mainsec_div .absolute-div .type{
+    height: 80px;
+    width: 200px;
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 25px;
+    border: 1px solid gray;
+}
+.sec .mainsec_div .absolute-div .selection a{
+    color: white;
+}
+.sec .mainsec_div .absolute-div .selection{
+    height: 80px;
+    width: 200px;
+    background-color: #1AA090;
+    display: grid;
+    place-content: center;
+    border: 5px solid white;
+}

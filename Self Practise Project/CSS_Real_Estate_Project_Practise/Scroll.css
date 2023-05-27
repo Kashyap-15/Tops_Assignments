@@ -1,0 +1,93 @@
+/* ========================== SECTION ============================== */
+.grid{
+    background-color: #010122;
+}
+.grid .div_m{
+    margin: 0px 80px;
+}
+.grid .div_p{
+    padding: 20px;
+}
+/* ========================== MAIN ============================== */
+.grid h1{
+    color: white;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* ========================== GRID ============================== */
+.grid .maindiv_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+.grid .maindiv_grid img{
+    height: auto;
+    max-width: 100%;
+}
+/* ========================== IMG1 ============================== */
+.grid .maindiv_grid .div_img1{
+    color: white;
+}
+.grid .maindiv_grid .div_img1 i{
+    color: #1AA090;
+    font-size: 20px;
+}
+.grid .maindiv_grid .div_img1 .div_flex{
+    padding-top: 20px;
+    display: flex;
+    gap: 70px;
+   
+}
+.grid .maindiv_grid .div_img1 h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.grid .maindiv_grid .div_img1 h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ========================== IMG2 ============================== */
+.grid .maindiv_grid .div_img2{
+    color: white;
+}
+.grid .maindiv_grid .div_img2 i{
+    color: #1AA090;
+    font-size: 20px;
+}
+.grid .maindiv_grid .div_img2 .div_flex{
+    padding-top: 20px;
+    display: flex;
+    gap: 70px;
+   
+}
+.grid .maindiv_grid .div_img2 h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.grid .maindiv_grid .div_img2 h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ========================== IMG3 ============================== */
+.grid .maindiv_grid .div_img3{
+    color: white;
+}
+.grid .maindiv_grid .div_img3 i{
+    color: #1AA090;
+    font-size: 20px;
+}
+.grid .maindiv_grid .div_img3 .div_flex{
+    padding-top: 20px;
+    display: flex;
+    gap: 70px;
+   
+}
+.grid .maindiv_grid .div_img3 h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.grid .maindiv_grid .div_img3 h4{
+    font-size: 20px;
+    font-weight: 600;
+}

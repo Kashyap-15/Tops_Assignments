@@ -1,0 +1,58 @@
+/* ========================== SECTION ============================== */
+.quote_sec{
+    background-color: #010122;
+}
+.quote_sec .div_m{
+    margin: 0px 80px;
+}
+.quote_sec .div_p{
+    padding: 20px;
+}
+/* ========================== QUOTE ============================== */
+.quote_sec .main_div{
+    color: white;
+}
+.quote_sec .main_div .quote{
+    height: auto;
+    width: 700px;
+    margin: auto;
+}
+.quote_sec .main_div .quote span{
+    font-size: 70px;
+    color: #1AA090;
+}
+.quote_sec .main_div .quote h3{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+/* ========================== HERO_MAIN ============================== */
+
+.quote_sec .hero_main{
+    padding-top: 200px;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    gap: 50px;
+}
+.quote_sec .hero_main .absolute_div{
+    color: white;
+    padding-top: 80px;
+}
+.quote_sec .hero_main .absolute_div h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.quote_sec .hero_main .absolute_div p{
+    padding: 30px 0px;
+    font-size: 20px;
+}
+.quote_sec .hero_main .absolute_div button{
+    height: 50px;
+    width: 150px;
+    background-color: #1AA090;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    border: 2px solid transparent;
+}
