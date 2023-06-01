@@ -1,0 +1,38 @@
+.feedback{
+    background-color: white;
+}
+.feedback .div_m{
+    margin: 0px 175px;
+}
+.feedback .div_p{
+    padding: 70px 0px;
+}
+/* ========== MAIN =============== */
+.feedback .div_main{
+    text-align: center;
+}
+.feedback .div_main h4{
+    color: #ff1654;
+    font-size: 20px;
+    font-weight: 500;
+}
+.feedback .div_main h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 40px;
+}
+.feedback .div_main span{
+    font-size: 60px;
+    color: #ff1654;
+    font-weight: 700;
+}
+.feedback .div_main p{
+    padding: 10px 166px;
+    margin-bottom: 20px;
+}
+.feedback .div_main img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}

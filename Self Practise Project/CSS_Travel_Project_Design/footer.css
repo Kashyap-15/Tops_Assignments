@@ -1,0 +1,60 @@
+.footer{
+    background-color: #f4ecf4;
+}
+.footer .div_m{
+    margin: 0px 175px;
+}
+.footer .div_p{
+    padding: 70px 0px;
+}
+/* ================ Main ============== */
+.footer .div_main{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .div_main .head{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color: black;
+}
+.footer .div_main li{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 13px;
+    color: gray;
+}
+.footer .div_main .div_last .div_email{
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    height: 250px;
+    padding: 35px;
+}
+.footer .div_main .div_last .div_email h2{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+.footer .div_main .div_last .div_email input{
+    height: 50px;
+    width: 70%;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background-color: #f4ecf4; 
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer .div_main .div_last .div_email button{
+    height: 50px;
+    width: 15%;
+    color: white;
+    background-color: #ff1654;
+    border: 2px solid #ff1654;
+    border-radius: 10px;
+}
+.footer .div_main .div_last .div_email p{
+    padding: 30px 0px;
+    width: 80%;
+}

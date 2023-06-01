@@ -1,0 +1,78 @@
+/* =====================Section =============== */
+
+/* =================== Image ================= */
+.bg_image .div_main img{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 650px;
+    filter: brightness(65%);
+    /* transition: 1s all ease-in-out; */
+}
+/* ================== Content =================== */
+.bg_image .div_main .div_content{
+    position: absolute;
+    top: 30%;
+    left: 185px;
+    height: 273px;
+    width: 650px;
+    border: 2px solid transparent;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.bg_image .div_main .div_content h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+/* ==================DIV_INPUT ================== */
+.bg_image .div_main .div_content .div_input{
+    display: flex;
+    gap: 30px;
+}
+.bg_image .div_main .div_content .div_input .sel{
+    height: 50px;
+    width: 180px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 7px;
+}
+.bg_image .div_main .div_content .div_input input{
+    height: 50px;
+    width: 180px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 7px;
+}
+.bg_image .div_main .div_content .div_input button{
+    height: 50px;
+    width: 140px;
+    background-color: #ff1654;
+    color: white;
+    border: 2px solid #ff1654;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 17px;
+}
+/* ====================== Image Zoom ================== */
+@keyframes zoom_img {
+    from{
+        transform: scale(1.5);
+    }
+    to
+    {
+        transform: scale(1);
+    }
+}
+.bg_image .div_main img{
+    transition: 5s all ease;
+    animation: zoom_img 7s ease infinite;
+}
+.bg_image .div_main{
+    overflow: hidden;
+}

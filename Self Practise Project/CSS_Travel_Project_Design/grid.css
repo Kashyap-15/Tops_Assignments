@@ -1,0 +1,338 @@
+.grid{
+    background-color: #f4ecf4;
+}
+.grid .div_m{
+    margin: 0px 175px;
+}
+.grid .div_p{
+    padding: 100px 0px;
+}
+/* ==================== main div ============= */
+.grid .div_main .visit{
+    color: #ff1654;
+    font-weight: 500;
+    font-size: 17px;
+}
+.grid .div_main h1{
+    font-size: 45px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 70px;
+}
+.grid .div_main .box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+/* ====================== box-paris ================ */
+.grid .div_main .box .paris{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.grid .div_main .box .paris img{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+} 
+.grid .div_main .box .paris .info h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grid .div_main .box .paris .info .psuedo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+.grid .div_main .box .paris .info .psuedo .price{
+   color: #ff1654;
+}
+.grid .div_main .box .paris .info .psuedo h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ====================== box-bankok ================ */
+.grid .div_main .box .bankok{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.grid .div_main .box .bankok img{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+} 
+.grid .div_main .box .bankok .info h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grid .div_main .box .bankok .info .psuedo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+.grid .div_main .box .bankok .info .psuedo .price{
+   color: #ff1654;
+}
+.grid .div_main .box .bankok .info .psuedo h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ====================== box-maldives ================ */
+.grid .div_main .box .maldives{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.grid .div_main .box .maldives img{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+} 
+.grid .div_main .box .maldives .info h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grid .div_main .box .maldives .info .psuedo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+.grid .div_main .box .maldives .info .psuedo .price{
+   color: #ff1654;
+}
+.grid .div_main .box .maldives .info .psuedo h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ====================== box-greece ================ */
+.grid .div_main .box .greece{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.grid .div_main .box .greece img{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+} 
+.grid .div_main .box .greece .info h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grid .div_main .box .greece .info .psuedo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+.grid .div_main .box .greece .info .psuedo .price{
+   color: #ff1654;
+}
+.grid .div_main .box .greece .info .psuedo h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ====================== box-london ================ */
+.grid .div_main .box .london{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.grid .div_main .box .london img{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+} 
+.grid .div_main .box .london .info h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grid .div_main .box .london .info .psuedo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+.grid .div_main .box .london .info .psuedo .price{
+   color: #ff1654;
+}
+.grid .div_main .box .london .info .psuedo h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ====================== box-julian_alps ================ */
+.grid .div_main .box .julian_alps{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.grid .div_main .box .julian_alps img{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+} 
+.grid .div_main .box .julian_alps .info h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grid .div_main .box .julian_alps .info .psuedo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+.grid .div_main .box .julian_alps .info .psuedo .price{
+   color: #ff1654;
+}
+.grid .div_main .box .julian_alps .info .psuedo h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ====================== box-Thailand ================ */
+.grid .div_main .box .Thailand{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.grid .div_main .box .Thailand img{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+} 
+.grid .div_main .box .Thailand .info h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grid .div_main .box .Thailand .info .psuedo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+.grid .div_main .box .Thailand .info .psuedo .price{
+   color: #ff1654;
+}
+.grid .div_main .box .Thailand .info .psuedo h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* ====================== box-singapore ================ */
+.grid .div_main .box .singapore{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+.grid .div_main .box .singapore img{
+    height: 100%;
+    width: 35%;
+    border-radius: 10px;
+} 
+.grid .div_main .box .singapore .info h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+.grid .div_main .box .singapore .info .psuedo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+}
+.grid .div_main .box .singapore .info .psuedo .price{
+   color: #ff1654;
+}
+.grid .div_main .box .singapore .info .psuedo h3{
+    font-size: 20px;
+    font-weight: 600;
+}

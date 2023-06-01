@@ -1,0 +1,98 @@
+.flex_grid{
+    background-color: #f4ecf4;
+}
+.flex_grid .div_m{
+    margin: 0px 175px;
+}
+.flex_grid .div_p{
+    padding: 70px 0px;
+}
+/* ================ main ============= */
+.flex_grid .div_main{
+    display: flex;
+    align-items: center;
+}
+.flex_grid .div_main .div_grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+.flex_grid .div_main .div_grid div{
+    margin: 30px;
+    width: 90%;
+    height: 90%;
+}
+.flex_grid .div_main .div_grid img{
+    border-radius: 10px;
+    max-width: 95%;
+    height: 95%;
+    filter: brightness(70%);
+
+}
+.flex_grid .div_main .div_free img{
+    border-radius: 10px;
+    filter: brightness(70%);
+}
+/* ================ abosulte ================= */
+.flex_grid .div_main .div_free{
+    position: relative;
+}
+.flex_grid .div_main .div_free h1{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* ================== */
+.flex_grid .div_main .div_grid .div_egypt{
+    position: relative;
+}
+.flex_grid .div_main .div_grid .div_egypt h1{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+/* ================== */
+.flex_grid .div_main .div_grid .div_singapore{
+    position: relative;
+}
+.flex_grid .div_main .div_grid .div_singapore h1{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+/* ================== */
+.flex_grid .div_main .div_grid .div_thailand{
+    position: relative;
+}
+.flex_grid .div_main .div_grid .div_thailand h1{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+/* ================== */
+.flex_grid .div_main .div_grid .div_julian{
+    position: relative;
+}
+.flex_grid .div_main .div_grid .div_julian h1{
+    position: absolute;
+    top: 82%;
+    left: 5%;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+
