@@ -1,0 +1,107 @@
+1.	What is JavaScript? 
+a.	JavaScript is a scripting or programming language that allows you to implement complex features on web page.
+
+2.	What is the use of isNaN function?
+a.	isNaN() Function is used to check whether a given value is an illegal number or not. It returns true if the value is a NaN else returns false.
+
+3.	What is negative Infinity?
+a.	It is a special numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than
+    the largest representable number in JavaScript.
+
+4.	Which company developed JavaScript?
+a.	JavaScript was created at Netscape Communications by Brendan Eich in 1995.
+
+5.	What are undeclared and undefined variables?
+a.	Undefined: It occurs when a variable has been declared but has not been assigned any value 
+b.	Undeclared: It occurs when we try to access any variable that is not initialized or declared earlier using let or var or const keyword.
+
+6.	Write the code for adding new elements dynamically?
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="button">
+        <button id="addTask">Add task</button>
+    </div>
+    <div class="tasks"></div>
+    <script type="text/javascript">
+
+        let task = document.getElementsByClassName("tasks");
+
+        let addTask = document.getElementById("addTask");
+
+        addTask.addEventListener('click', function () {
+
+            for (let i = 0; i < task.length; i++) {
+
+                let newDiv = document.createElement("div");
+
+                newDiv.setAttribute("class", "list");
+
+                newDiv.innerText = "New Div created";
+                task[i].append(newDiv);
+            }
+        })
+    </script>
+</body>
+</html>
+
+7.	What is the difference between ViewState and SessionState?
+a.	The basic difference between these two is that the ViewState is to manage state at the client's end, making state management easy for end-user 
+    while SessionState manages state at the server's end, making it easy to manage content from this end too. ViewState: It is maintained at only 
+    one level that is page-level.
+
+8.	What is === operator?
+a.	=== (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values which are not of a similar type. This operator performs type casting for equality.
+
+9.	How can the style/class of an element be changed?
+a.	There are two common approaches that allow us to achieve this task.
+i.	style.property
+ii.	Changing the class itself
+b.	Approach 1: Changing CSS with the help of the style property
+c.	Approach 2: Changing the class itself, We can use two properties that can be used to manipulate the classes.
+
+10.	How to read and write a file using JavaScript?
+a.	There are two ways to do it:
+i.	Using JavaScript extensions (runs from JavaScript Editor), or
+ii.	2. Using a web page and ActiveX objects (Internet Explorer only)
+
+11.	What are all the looping structures in JavaScript?
+a.	JavaScript supports different kinds of loops:
+i.	for - loops through a block of code a number of times
+ii.	for/in - loops through the properties of an object
+iii.	for/of - loops through the values of an iterable object
+iv.	while - loops through a block of code while a specified condition is true
+v.	do/while - also loops through a block of code while a specified condition is true
+
+12.	How can you convert the string of any base to an integer in JavaScript?
+a.	In JavaScript parseInt() function (or a method) is used to convert the passed-in string parameter or value to an integer value itself. 
+    This function returns an integer of the base which is specified in the second argument of the parseInt() function.
+
+13.	What is the function of the delete operator?
+a.	The delete operator removes a property from an object.
+
+14.	What are all the types of Pop up boxes available in JavaScript?
+a.	JavaScript has three kind of popup boxes: 
+i.	Alert box
+ii.	Confirm box
+iii.	Prompt box.
+
+15.	What is the use of Void (0)?
+a.	It is used to prevent any side effects caused while inserting an expression in a web page.
+
+16.	How can a page be forced to load another page in JavaScript?
+a.	We can use window. location property inside the script tag to forcefully load another page in JavaScript.
+
+17.	What are the disadvantages of using innerHTML in JavaScript?
+a.	Event handlers attached to any DOM element are preserved.
+b.	Replacement is done everywhere.
+c.	It is not possible to append innerHTML.
+d.	Breaks the document.
+e.	Used for Cross-site Scripting.
