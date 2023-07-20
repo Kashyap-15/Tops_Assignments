@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        header{
+            background-color: aquamarine;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        header .div_m{
+            margin: 0px 50px;
+        }
+        header .div_p{
+            padding: 20px 0px;
+        }
+        header .main_div{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 20px;
+            height: 40px;
+        }
+        header .main_div .bars{
+            font-size: 30px;
+            position: relative;
+        }
+        .nav{
+            position: absolute;
+            top:  0px;
+            left: -460px;
+            font-size: 20px;
+            font-weight: 500;
+            background-color: lightblue;
+            width: 30%;
+            height: 100%;
+            transition: 0.5s all ease;
+        }
+        .nav a{
+            color: black;
+        }
+        .nav ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            gap: 30px;
+        }
+        
+        /* random */
+        .toggle_nav{
+            position: absolute;
+            top:  0px;
+            left: 0px;
+            font-size: 20px;
+            font-weight: 500;
+            background-color: lightblue;
+            width: 30%;
+            height: 100%;
+            transition: 0.5s all ease;
+        }
+        .toggle_nav a{
+            color: black;
+        }
+        .toggle_nav ul{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: end;
+            gap: 30px;
+        }
+        .toggle_nav span{
+            display: grid;
+            justify-content: end;
+        }
+        .sec1 .main_div{
+            background-color: cadetblue;
+            height: 713px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="div_m">
+            <div class="div_p">
+                <div class="main_div">
+                    <div class="bars">
+                        <span class="fa-solid fa-bars"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="nav">
+        <span class="fa-solid fa-close"></span>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Help</a></li>
+        </ul>
+    </div>
+    <section class="sec1">
+        <div class="main_div">
+            <img src="../JS_Practical/images/Maldives.jpg" alt="">
+        </div>
+    </section>
+
+    <script>
+        let btn = document.querySelector(".bars");
+        let t_nav = document.querySelector(".nav");
+        let icon = document.querySelector(".fa-bars");
+        let close_bar = document.querySelector(".fa-close");
+
+        btn.addEventListener("click",function(){
+            t_nav.classList.add("toggle_nav");
+        })
+        close_bar.addEventListener("click",function(){
+            t_nav.classList.remove("toggle_nav");
+        })
+    </script>
+</body>
+</html>

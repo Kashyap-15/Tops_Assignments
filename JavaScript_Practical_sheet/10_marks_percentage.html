@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="main_div">
+            <h2>Marksheet for informartion technology</h2>
+            <form action="#">
+                <table>
+                    <tr>
+                        <td>Enter Marks</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>1. C language</td>
+                        <td><input type="number" id="c_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>2. C++ language</td>
+                        <td><input type="number" id="c++_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>3. Database</td>
+                        <td><input type="number" id="database_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>4. HTML</td>
+                        <td><input type="number" id="html_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>5. CSS</td>
+                        <td><input type="number" id="css_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>6. php</td>
+                        <td><input type="number" id="php_marks"></td>
+                    </tr>
+                    <tr>
+                        <td>7. Core Java</td>
+                        <td><input type="number" id="java_marks"></td>
+                    </tr>
+                        <td></td>
+                        <td><button onclick="return Result()">Result</button></td>
+                    <tr>
+                        <td><span id="total"></span></td>
+                        <td><span id="percentage"></span></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+       
+    </section>
+
+    <script>
+        function Result(){
+            let c_marks = parseInt(document.getElementById("c_marks").value);
+            let cpp_marks = parseInt(document.getElementById("c++_marks").value);
+            let database_marks = parseInt(document.getElementById("database_marks").value);
+            let html_marks = parseInt(document.getElementById("html_marks").value);
+            let css_marks = parseInt(document.getElementById("css_marks").value);
+            let php_marks = parseInt(document.getElementById("php_marks").value);
+            let java_marks = parseInt(document.getElementById("java_marks").value);
+
+            let total = c_marks+cpp_marks+database_marks+html_marks+css_marks+php_marks+java_marks;
+
+            let percen = (total / 350)*100;
+
+            document.getElementById("total").innerHTML = "total marks are" + "<br>" + total + "\\" + "350";
+            document.getElementById("percentage").innerHTML = "Percentage is" + " " + percen;
+            return false;
+        }
+    </script>
+</body>
+</html>

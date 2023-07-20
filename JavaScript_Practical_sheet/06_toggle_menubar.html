@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        header{
+            background-color: aquamarine;
+            position: fixed;
+            width: 100%;
+        }
+        header .div_m{
+            margin: 0px 50px;
+        }
+        header .div_p{
+            padding: 10px 0px;
+        }
+        header .main_div{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            height: 40px;
+        }
+        header .main_div .logo{
+            flex:1;
+            font-size: 30px;
+        }
+        header .main_div .nav{
+            flex: 3;
+        }
+        header .main_div .nav a{
+            color: black;
+        }
+        header .main_div .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 30px;
+        }
+        header .main_div .btns{
+            display: none;
+            flex: 1;
+        }
+        /*================================ random toggle class ===============*/
+        header .main_div .toggle_nav{
+                flex: 3;
+        }
+        header .main_div .toggle_nav ul{
+               display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 30px;
+          }
+        /*=========================== media quarry ======================== */
+        @media (max-width:576px) {
+
+            header .main_div .nav{
+            display: none;
+            }
+            header .main_div .btns{
+                display: flex;
+                justify-content: end;
+                flex: 1;
+            }
+            header .main_div .btns button{
+                height: 30px;
+                width: 30px;
+                background-color: blue;
+                color: white;
+            }
+            header .main_div .toggle_nav{
+                flex: 3;
+                display: block;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: black;
+                width: 100%;
+            }
+            header .main_div .toggle_nav a{
+                color: white;
+            }
+            header .main_div .toggle_nav ul{
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                flex-direction: column;
+                gap: 30px;
+                padding: 15px;
+            }
+            header .main_div .btns{
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="div_m">
+            <div class="div_p">
+                <div class="main_div">
+                    <div class="logo">
+                        <span class="fa-brands fa-html5"></span>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="btns">
+                        <button><span class="fa-solid fa-bars"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script>
+        let btn = document.querySelector(".btns");
+        let toggle_nav = document.querySelector(".nav");
+        let icon = document.querySelector(".fa-bars");
+
+        btn.addEventListener("click",function(){
+            toggle_nav.classList.toggle("toggle_nav");
+            
+            if (toggle_nav.classList.contains("toggle_nav")==true) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-close");
+            }
+            else
+            {
+                icon.classList.remove("fa-close");
+                icon.classList.add("fa-bars");
+            }
+        })
+    </script>
+</body>
+</html>

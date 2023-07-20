@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style-type: none;
+        }
+        header{
+            background-color: aquamarine;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: 1s all ease-in-out;
+        }
+        header .div_m{
+            margin: 0px 50px;
+        }
+        header .div_p{
+            padding: 10px 0px;
+        }
+        header .main_div{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            height: 40px;
+        }
+        header .main_div .logo{
+            flex:1;
+            font-size: 30px;
+        }
+        header .main_div .nav{
+            flex: 3;
+        }
+        header .main_div .nav a{
+            color: black;
+        }
+        header .main_div .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 30px;
+        }
+        header .main_div .btns{
+            display: none;
+            flex: 1;
+        }
+        .sec1 .main_div{
+            background-color: burlywood;
+            height: 500px;
+            width: 100%;
+        }
+        .sec2 .main_div{
+            background-color: cadetblue;
+            height: 500px;
+            width: 100%;
+        }
+        /* ==================== Random Header part ================ */
+        .toggle_head{
+            background-color:gainsboro;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: 1s all ease-in-out;
+        }
+        .toggle_head .div_m{
+            margin: 0px 50px;
+        }
+        .toggle_head .div_p{
+            padding: 10px 0px;
+        }
+        .toggle_head .main_div{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+            height: 40px;
+        }
+        .toggle_head .main_div .logo{
+            flex:1;
+            font-size: 30px;
+        }
+        .toggle_head .main_div .nav{
+            flex: 3;
+        }
+        .toggle_head .main_div .nav a{
+            color: black;
+        }
+        .toggle_head .main_div .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 30px;
+        }
+        .toggle_head .main_div .btns{
+            display: none;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header class=".head">
+        <div class="div_m">
+            <div class="div_p">
+                <div class="main_div">
+                    <div class="logo">
+                        <span class="fa-brands fa-html5"></span>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Help</a></li>
+                        </ul>
+                    </div>
+                    <div class="btns">
+                        <button><span class="fa-solid fa-bars"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="sec1">
+        <div class="main_div"></div>
+    </section>
+    <section class="sec2">
+        <div class="main_div"></div>
+    </section>
+    <script>
+        function head_change_color(){
+        let head_change = document.querySelector("header");
+        let current = window.scrollY;
+
+        if(current> 0 )
+        {
+            head_change.classList.add("toggle_head");
+        }
+        else
+        {
+            head_change.classList.remove("toggle_head");
+        }
+    }
+    window.addEventListener("scroll",head_change_color)
+    </script>
+</body>
+</html>

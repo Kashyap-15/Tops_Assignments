@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <button id="green" onclick="green_fun()"> Green</button>
+    <button id="blue" onclick="blue_fun()"> Blue</button>
+    <hr>
+    <div class="green_div">Green</div>
+    <br>
+    <div class="blue_div">Blue</div>
+
+    <script>
+        function green_fun(){
+            let green_selector = document.querySelector(".green_div");
+            green_selector.style.backgroundColor = "green"
+            green_selector.style.color = "white"
+        }
+        function blue_fun(){
+            let blue_selector = document.querySelector(".blue_div");
+            blue_selector.style.backgroundColor = "blue"
+            blue_selector.style.color = "white"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .div1{
+            height: 300px;
+            width: 300px;
+            font-size: 40px;
+            border: 1px solid black;
+            text-align: right;
+            padding: 20px;
+        }
+        .dark_mode{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"><span class="fa-solid fa-moon"></span></div>
+    <!-- <span class="fa-solid fa-sun"></span> -->
+    <script>
+        let moon = document.querySelector(".fa-moon");
+        let div_selector = document.querySelector(".div1");
+        moon.addEventListener("click",function(){
+            div_selector.classList.toggle("dark_mode");
+            if (div_selector.classList.contains("dark_mode") == true) {
+                moon.classList.remove("fa-moon");
+                moon.classList.add("fa-sun");
+            }
+            else
+            {
+                moon.classList.remove("fa-sun");
+                moon.classList.add("fa-moon");
+            }
+        })
+    </script>
+</body>
+</html>

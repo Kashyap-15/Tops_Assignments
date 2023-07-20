@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 250px;
+            height: auto;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        Enter Any number :
+        <input type="text" name="" id="input_num">
+        <button id="btn" onclick="table()">Display</button>
+        <br><br><br>
+    </form>
+    <br>
+        <div class="div1" id="dis"></div>
+    <br>
+    <script>
+        function table(){
+            let input_num = document.getElementById("input_num").value;
+            let result = "";
+
+            if (input_num == 0 || input_num == null) {
+                document.getElementById("dis").innerHTML = "Please Enter valid input Number";
+            }else{
+                for(let i = 1; i <= 10 ; i++)
+                {
+                    result = result + input_num + "x" + i + "=" + (input_num*i) + "<br>" + "<br>";
+                }
+                document.getElementById("dis").innerHTML = result;
+            }
+        }
+    </script>
+</body>
+</html>

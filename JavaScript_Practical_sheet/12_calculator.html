@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        td{
+            font-size: 35px;
+            font-weight: 700;
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+        }
+        .display{
+            background-color: white;
+        }
+        section .padding{
+            padding: 100px;
+        }
+        section .main_div{
+            border: 1px solid black;
+            width: fit-content;
+            padding: 10px;
+            margin: auto;
+        }
+        table button{
+            width: 50px;
+            height: 50px;
+            background: blue;
+            color: white;
+            border: none;
+        }
+        table input{
+            width: 99%;
+            height: 60px;
+            text-align: right;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="padding">
+            <div class="main_div">
+                <h2>Calculator</h2>
+                <form action="#">
+                    <table border="1" style="height: 500px; width: 400px;" cellspacing="10px" cellpadding="10px">
+                        <tr>
+                            <td colspan="4"><input type="text" id="txtInput"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button onclick="clearData()">CE</button></td>
+                            <td><button onclick="storeData('%')">%</button></td>
+                            <td><button onclick="storeData('/')">/</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="storeData('7')">7</button></td>
+                            <td><button onclick="storeData('8')">8</button></td>
+                            <td><button onclick="storeData('9')">9</button></td>
+                            <td><button onclick="storeData('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="storeData('4')">4</button></td>
+                            <td><button onclick="storeData('5')">5</button></td>
+                            <td><button onclick="storeData('6')">6</button></td>
+                            <td><button onclick="storeData('-')">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="storeData('1')">1</button></td>
+                            <td><button onclick="storeData('2')">2</button></td>
+                            <td><button onclick="storeData('3')">3</button></td>
+                            <td><button onclick="storeData('*')">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="storeData('00')">00</button></td>
+                            <td><button onclick="storeData('0')">0</button></td>
+                            <td><button onclick="storeData('.')">.</button></td>
+                            <td><button onclick="calData()">=</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        function storeData(v){
+            var txtInput1=document.getElementById("txtInput");
+            var old_value =  txtInput1.value;
+            var t=old_value.length;
+            var lastchar = old_value[t-1];
+           
+            var oprsym = ["+","-","*","/",".","%"];
+            if(oprsym.includes(v)){
+                if(oprsym.includes(lastchar)){
+                    var removelast=old_value.slice(0,-1);
+                    txtInput1.value=removelast+v;
+                }else{
+                    txtInput1.value=old_value+v;
+                }
+            }else{
+                txtInput1.value=old_value+v;
+            }
+        }
+        function calData(){
+            var txtInput1=document.getElementById("txtInput");
+            var old_value = eval(txtInput1.value);
+            txtInput1.value = old_value;
+        }
+        function clearData(){
+            document.getElementById("txtInput").value="";
+        }
+    </script>
+</body>
+</html>

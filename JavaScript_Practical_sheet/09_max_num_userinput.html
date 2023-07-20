@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter any 2 Number to display that which is Minimum from them</h3>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>1st Number : </td>
+                    <td><input type="number" id="no1"></td>
+                </tr>
+                <tr>
+                    <td>2nd Number : </td>
+                    <td><input type="number" id="no2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick=" return result()">Display</button></td>
+                </tr>
+            </table>
+            <p id="show"></p>
+        </form>
+    <script>
+        function result(){
+            let num1 = document.getElementById("no1").value;
+            let num2 = document.getElementById("no2").value;
+            if(num1<num2){
+                document.getElementById("show").innerHTML = num1 + " is Minimum";
+            }
+            else if(num2<num1)
+            {
+                document.getElementById("show").innerHTML = num2 + " is Minimum";
+            }
+            else{
+                document.getElementById("show").innerHTML = "Both Number are same";
+            }
+            return false
+        }
+    </script>
+</body>
+</html>

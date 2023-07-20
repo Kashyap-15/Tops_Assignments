@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .div1{
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <label for="">Set color</label>
+    <input type="color" id="inputcolor">
+    <button onclick="return fillcolor()">Set color</button>
+    <br><br>
+    <div class="div1">Hello</div>
+</body>
+<script>
+    function fillcolor(){
+        let colors = document.getElementById("inputcolor").value;
+        let div_selector = document.querySelector(".div1");
+        div_selector.style.backgroundColor = colors;
+    }
+</script>
+</html>

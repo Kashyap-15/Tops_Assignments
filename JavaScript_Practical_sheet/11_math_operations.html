@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_div {
+            margin: 0px auto;
+            padding: 100px;
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+
+        .main_div .icon {
+            height: 100px;
+            width: 130px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+        }
+
+        .main_div .icon div {
+            background-color: gray;
+            display: grid;
+            place-content: center;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="main_div">
+            <h1>Math operations</h1>
+            <form action="#">
+                <table cellpadding="3px">
+                    <tr>
+                        <td>1st Number : </td>
+                        <td><input type="text" name="" id="no1"></td>
+                    </tr>
+                    <tr>
+                        <td>2nd Number : </td>
+                        <td><input type="text" name="" id="no2"></td>
+                    </tr>
+                    <tr>
+                        <td class="icon">
+                            <button class="plus" onclick="return sum()">+</button>
+                            <button class="minus" onclick="return sub()">-</button>
+                            <button class="mult" onclick="return mul()">*</button>
+                            <button class="divi" onclick="return divi()">/</button>
+                            <button class="modu" onclick="return modu()">%</button>
+                        </td>
+                        <td>
+                            <p id="show"></p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+    <script>
+
+        function sum() {
+            var num1 = document.getElementById("no1").value;
+            var num2 = document.getElementById("no2").value;
+            var add = parseInt(num1) + parseInt(num2);
+            document.getElementById("show").innerHTML = "Answer is " + add;
+            return false;
+        }
+        function sub() {
+            num1 = document.getElementById("no1").value;
+            num2 = document.getElementById("no2").value;
+            let sub = parseInt(num1) - parseInt(num2);
+            document.getElementById("show").innerHTML = "Answer is " + sub;
+            return false;
+        }
+
+        function mul() {
+            let num1 = document.getElementById("no1").value;
+            let num2 = document.getElementById("no2").value;
+            let mul = parseInt(num1) * parseInt(num2);
+            document.getElementById("show").innerHTML = "Answer is " + mul;
+            return false;
+        }
+
+        function divi() {
+            let num1 = document.getElementById("no1").value;
+            let num2 = document.getElementById("no2").value;
+            let divi = parseInt(num1) / parseInt(num2);
+            document.getElementById("show").innerHTML = "Answer is " + divi;
+            return false;
+        }
+
+        function modu() {
+            let num1 = document.getElementById("no1").value;
+            let num2 = document.getElementById("no2").value;
+            let modu = parseInt(num1) % parseInt(num2);
+            document.getElementById("show").innerHTML = "Answer is " + modu;
+            return false;
+        }
+    </script>
+</body>
+
+</html>
