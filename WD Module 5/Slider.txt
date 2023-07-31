@@ -1,0 +1,12 @@
+(3)How to create slider with animation?
+	<script>
+      $(function () {
+        $("#gfg").slider({ animate: true });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Kashyap</h1>
+    <h2>jQuery UI | slider animate option></h2>
+    <divid="gfg"></div>
+  </body>

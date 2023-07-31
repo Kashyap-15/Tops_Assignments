@@ -1,0 +1,11 @@
+
+2. How to apply CSS using jQuery, how to add class & remove class in jquery, jQuery animation?
+    $(“p”).css(“background-color”);
+        $(document).ready(function(){
+            $(“#btn1”).click(function(){
+                $(“#head”).addClass(“head”)
+                })
+            $(“#btn1”).click(function(){
+                $(“#head”).removeClass(“head”)
+            })  
+        })
