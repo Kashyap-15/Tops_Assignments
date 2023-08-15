@@ -1,0 +1,59 @@
+Q-1: What are the advantages of Bootstrap?
+Ans:- Easy to use: Anyone with basic knowledge of HTML and CSS can start using Bootstrap,
+    - By using Bootstrap's responsive CSS adjusts to phones, tablets, and desktops,
+    - In Bootstrap 3, mobile-first styles are part of the core framework,
+    - Bootstrap is compatible with all modern browsers such as Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera.
+
+
+Q-2: What is a Bootstrap Container, and how does it work?
+Ans: Containers are the most basic layout element in Bootstrap and are required when using our default grid system,
+     Containers are used to contain, pad, and (sometimes) center the content within them.
+
+     there are three different containers:
+     1-container, which sets a max-width at each responsive breakpoint
+     2-container-fluid, which is width: 100% at all breakpoints
+     3-container-{breakpoint}, which is width: 100% until the specified breakpoint.
+
+
+Q-3: What are the default Bootstrap text settings? 
+Ans: Bootstrap 5 uses a default font-size of 1rem (16px by default), and its line-height is 1.5.
+     The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif.
+     All <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+
+
+Q-4: What do you know about the Bootstrap Grid System?
+Ans: Bootstrap’s grid system uses a series of containers, rows, and columns to layout and align content.
+     It’s built with flexbox and is fully responsive.
+
+
+Q-5: What is the difference between Bootstrap 4 and Bootstrap 5?
+Ans: 1.The File Size, when compared with Bootstrap 4, they reduced the file size of Bootstrap 5 to load the components faster.
+     2.System	Bootstrap 4 has five levels: xs, sm, md, lg, and xl. and Bootstrap 5 has six levels: xs, sm, md, lg, xl, and xxl.
+     3.Bootstrap 4 includes jquery and all associated plug-ins. and Jquery has been deleted and replaced with vanilla JS and several functional plug-ins in Bootstrap 5.
+     4.Bootstrap 4 is compatible with both Internet Explorer 10 and 11. and Bootstrap 5 does not support Internet Explorer 10 and 11.
+     5.Bootstrap 4 uses fewer CSS properties. and Bootstrap 5 uses more CSS properties.
+     6.There is no off-canvas element. and The offcanvas component is now available.
+
+
+Q-6: What is a Button Group, and what is the class for a basic Button Group?
+Ans: Button groups allow multiple buttons to be stacked together on a single line. This is useful when you want to place items like alignment buttons together.
+     ".btn-" class is used for a basic button group. 
+
+
+Q-7: How can you use Bootstrap to make thumbnails?
+Ans: By using an <a> tag with the class of ".thumbnail" around an image.This adds four pixels of padding and a gray border.On hover, an animated glow outlines the image.
+
+
+Q-8: In Bootstrap 4, what is flexbox?
+Ans: In Bootstrap 4, flex box is used to control the layout and alignment specification of Bootstrap 4 components.
+     This box makes it easier to design flexible responsive layout structures without using float or positioning attributes.
+
+
+Q-9: How can one create an alert in Bootstrap?
+Ans: Alerts are created with the ".alert class",for Ex.- ".alert-success", ".alert-info", ".alert-warning" or ".alert-danger". 
+
+
+Q-10: What is a bootstrap card and how would you create one?
+Ans: A card in Bootstrap is a bordered box with some padding around its content. It includes options for headers, footers, content, colors, etc.
+     A card is created with the ".card" class, and content inside the card has a ".card-body" class.
+
